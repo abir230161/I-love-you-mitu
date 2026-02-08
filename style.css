@@ -1,0 +1,272 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffb6c1; /* Soft Pink Background */
+    color: white;
+}
+/* ========== RESET ========== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ========== BODY ========== */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffb6c1; /* Pink Background */
+    color: white;
+}
+
+/* ========== STARS ========== */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow:
+        100px 200px white,
+        300px 400px white,
+        500px 150px white,
+        700px 350px white,
+        900px 100px white,
+        1100px 300px white;
+    animation: twinkle 5s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.6; }
+    to   { opacity: 1; }
+}
+
+/* ========== CENTER CONTENT ========== */
+.center {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* ========== TEXT ========== */
+#typing {
+    font-size: 3.6rem;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 3s;
+}
+
+/* ========== BUTTONS ========== */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 4.5s;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.yes {
+    background: white;
+    color: #ff4b6e;
+}
+
+.no {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* ========== RESULT ========== */
+.result {
+    margin-top: 25px;
+    font-size: 1.9rem;
+    display: none;
+}
+
+/* ========== FLOATING EMOJIS ========== */
+.float {
+    position: absolute;
+    font-size: 2.6rem;
+    animation: floatUp linear infinite;
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) scale(0.5); opacity: 0; }
+    10% { opacity: 1; }
+    100% { transform: translateY(-120vh) scale(1.2) rotate(360deg); opacity: 0; }
+}
+
+/* ========== FIREWORK ========== */
+.firework {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: explode 1.2s ease-out forwards;
+}
+
+@keyframes explode {
+    to {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}
+
+/* ========== FADE ========== */
+@keyframes fadeIn { to { opacity: 1; } }
+
+
+
+/* ========== STARS ========== */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow:
+        100px 200px white,
+        300px 400px white,
+        500px 150px white,
+        700px 350px white,
+        900px 100px white,
+        1100px 300px white;
+    animation: twinkle 5s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.6; }
+    to   { opacity: 1; }
+}
+
+/* ========== CENTER CONTENT ========== */
+.center {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* ========== TEXT ========== */
+#typing {
+    font-size: 3.6rem;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 3s;
+}
+
+/* ========== BUTTONS ========== */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 4.5s;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.yes {
+    background: white;
+    color: #ff4b6e;
+}
+
+.no {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* ========== RESULT ========== */
+.result {
+    margin-top: 25px;
+    font-size: 1.9rem;
+    display: none;
+}
+
+/* ========== FLOATING EMOJIS ========== */
+.float {
+    position: absolute;
+    font-size: 2.6rem;
+    animation: floatUp linear infinite;
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) scale(1.2) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ========== FIREWORK ========== */
+.firework {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: explode 1.2s ease-out forwards;
+}
+
+@keyframes explode {
+    to {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}
+
+/* ========== FADE ========== */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
